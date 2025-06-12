@@ -1,0 +1,99 @@
+{
+	"_version": "1.52.0",
+	"sap.app": {
+		"id": "io.citra.search.card.cfg",
+		"type": "card",
+		"i18n": "i18n/i18n.properties",
+		"title": "Configurable Search Integration Card",
+		"subTitle": "Integration Card",
+		"applicationVersion": {
+			"version": "1.0.1"
+		},
+		"shortTitle": "Configurable Integration Card",
+		"info": "Integration Card",
+		"description": "Configurable Integration Search Card",
+		"tags": {
+			"keywords": [
+				"Component",
+				"Card",
+				"Configurable"
+			]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://technical-object"
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"phone": true,
+			"tablet": true
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "io.citra.search.card.cfg.View",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.116",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"businessentity": {
+				"type": "sap.ui.model.json.JSONModel"
+			}
+		}
+	},
+	"sap.card": {
+		"type": "Component",
+		"configuration": {
+			"parameters": {
+				"title": {
+					"value": "Search for a specific ...",
+					"type": "string",
+					"label": "Card Title",
+					"description": "The title of the card."
+				},
+				"placeHolder": {
+					"value": "Enter ... and Press Go",
+					"type": "string",
+					"label": "Search Field Place Holder Text",
+					"description": "Search Field Place Holder Text."
+				},
+				"semanticObject": {
+					"value": "myWorkZoneApp",
+					"type": "string",
+					"label": "semantic Object of target application",
+					"description": "semantic Object of target application"
+				},
+				"action": {
+					"value": "display",
+					"type": "string",
+					"label": "Action of target application",
+					"description": "Action of target application"
+				},
+				"ibnParams": {
+					"value": "fieldName",
+					"type": "string",
+					"label": "Filter filed of target application",
+					"description": "Filter filed of target application"
+				}
+			}
+		},
+		"header": {
+			"title": "{parameters>/title/value}"
+		}
+
+	}
+}

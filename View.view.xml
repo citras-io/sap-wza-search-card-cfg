@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+          width="100%"
+          controllerName="io.citra.search.card.cfg.Main">
+    <VBox
+        class="sapUiSmallMargin"
+        justifyContent="SpaceBetween">
+        <HBox justifyContent="SpaceBetween"
+              renderType="Bare">
+              <Input id="inputField" width="100%" placeholder="{parameters>/placeHolder/value}"/>        
+        </HBox>
+        <Toolbar style="Clear" class="sapUiTinyMarginTop" >
+            <ToolbarSpacer/>
+            <Button text="Go" press="onGoPress" type="Emphasized" />
+        </Toolbar>
+    </VBox>
+</mvc:View>
