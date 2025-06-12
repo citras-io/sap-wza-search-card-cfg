@@ -1,7 +1,8 @@
 © 2025 Citra Solutions Pty Ltd. Licensed under the MIT License.
 
 # SAP Work Zone Advanced -  UI Integration Card
-## Simple configurable seach card
+## Simple configurable seach card 
+[https://citras.io/blog-post/workzone-advanced-configurable-integration-card](https://citras.io/blog-post/workzone-advanced-configurable-integration-card)
 
 ## What this code does
 This allows you to publish a fully configurable UI Intigration search card. The card requires an application with symantic navigation enabled.
